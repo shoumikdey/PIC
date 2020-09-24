@@ -55,11 +55,11 @@ void __interrupt() interruptServiceRoutine(void) {
 
     }
 
-    //    if (INTCONbits.INTF == 1) {
-    //        counterTarget *= 2;
-    //        INTCONbits.INTF = 0;
-    //        
-    //        }
+        if (INTCONbits.INTF == 1) {
+            counterTarget *= 2;
+            INTCONbits.INTF = 0;
+            
+            }
 
 }
 
